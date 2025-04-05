@@ -18,7 +18,7 @@ A simple Angular application that displays Game of Thrones houses using the [An 
 
 ## 🖼️ Screenshots
 
-> Make sure to place your screenshots inside a `screenshots/` folder in your project root.
+> Make sure to place your screenshots inside a `Public/` folder in your project root.
 
 ### 🏘️ House List Page
 ![House List Page](public/HouseList.png)
