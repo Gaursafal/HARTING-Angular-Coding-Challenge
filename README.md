@@ -1,29 +1,44 @@
-# HARTING Coding Challenge
+# HARTING-Angular-Coding-Challenge 🏰
 
-Welcome to our coding challenge. This is your chance to demonstrate your capabilities to us, so feel free to impress us. We are really looking forward to your results and wish you much success.
+A simple Angular application that displays Game of Thrones houses using the [An API of Ice And Fire](https://anapioficeandfire.com/api/). It features a clean layout, reusable components, loading states, and responsive design.
 
-## Task
+> This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
-Create a single page application that uses the [Game of Thrones API](https://anapioficeandfire.com/) to show all the Game of Thrones houses in an overview. By clicking on one house a detail page with more information of that house should be displayed.
+---
 
-The design and UX is completely up to you. We do not expect a fully designed application, so please focus on a fully functional solution. However the application should be usable and contain some basic styling.
+## 📦 Features
 
-## Requirements
+- 🔍 List of Game of Thrones houses
+- 📄 House detail view with structured data
+- ⏳ Loading indicators using a reusable loader component
+- 🧩 Modular and standalone component architecture
+- 🎨 Clean and responsive UI with grid layout
 
-- overview page that displays all houses
-- each house has its own detail page
-- all Game of Thrones related data is retrieved from the [API](https://anapioficeandfire.com/)
-- provide your results using [GitHub](https://github.com)
-  - should contain:
-    - a readme that explains us how to run your application (you can replace this readme)
-    - your angular code
-    - a compiled version of your application
-  - appreciated by us:
-    - a commit history with more than one commit that contains all
+---
 
+## 🖼️ Screenshots
 
-## What's important to us
+> Make sure to place your screenshots inside a `screenshots/` folder in your project root.
 
-- clean code and file structure
-- human readable documentation but keep it short
-- prevent unnecessarily complex solutions
+### 🏘️ House List Page
+![House List Page](public/HouseList.png)
+
+### 🏰 House Detail Page
+![House Detail Page](public/HouseDetail.png)
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Prerequisites
+
+- Node.js (v18 or above recommended)
+- Angular CLI
+
+### 📥 Clone and Install
+
+```bash
+git clone https://github.com/vsartison/HARTING-Angular-Coding-Challenge.git
+cd HARTING-Angular-Coding-Challenge
+npm install
+ng serve 
