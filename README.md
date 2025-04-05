@@ -1,6 +1,6 @@
 # HARTING-Angular-Coding-Challenge 🏰
 
-A simple Angular application that displays Game of Thrones houses using the [An API of Ice And Fire](https://anapioficeandfire.com/api/). It features a clean layout, reusable components, loading states, and responsive design.
+A simple Angular application that displays Game of Thrones houses using the [An API of Ice And Fire](https://anapioficeandfire.com/). It features a clean layout, reusable components, loading states, and responsive design.
 
 > This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.6.
 
