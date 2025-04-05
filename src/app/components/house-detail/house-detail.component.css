@@ -1,0 +1,47 @@
+.house-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background: #ffffff;
+  min-height: 100vh;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.house-card {
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+
+}
+
+.house-name {
+  font-size: 2rem;
+  color: #c59d2f;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+}
+
+.list-section {
+  padding: 1rem;
+}
+
+.list-section h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  color: #444;
+  border-bottom: 1px solid #ccc;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0;
+}

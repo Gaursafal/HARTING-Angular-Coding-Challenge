@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<app-loading *ngIf="!house"></app-loading>
+<div class="house-container" *ngIf="house">
+  <div class="house-card">
+    <h2 class="house-name">{{ house.name || 'Unnamed House' }}</h2>
+
+    <div class="info-grid">
+      <div class="list-section" *ngFor="let item of basicInfo">
+        <h3>{{ item.label }}</h3>
+        <ul><li>{{ item.value }}</li></ul>
+      </div>
+    </div>
+  </div>
+</div>
