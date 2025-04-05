@@ -24,7 +24,7 @@ A simple Angular application that displays Game of Thrones houses using the [An 
 ![House List Page](public/HouseList.png)
 
 ### 🏰 House Detail Page
-![House Detail Page](public/HouseDetail.png)
+![House Detail Page](public/HouseDetails.png)
 
 ---
 
