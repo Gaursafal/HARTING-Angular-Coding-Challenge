@@ -1,20 +1,35 @@
-<!DOCTYPE html>
 <app-loading *ngIf="loading"></app-loading>
 
 <div class="container" *ngIf="!loading">
-  <h2 class="title">Game of Thrones Houses</h2>
+  <h2 class="title">🏰 Game of Thrones Houses</h2>
 
   <div *ngIf="houses.length === 0" class="no-houses">
     <p>No houses found.</p>
   </div>
 
-  <div class="house-list" *ngIf="houses.length > 0">
-    <div class="house-card" *ngFor="let house of houses" (click)="goToDetail(house.url)">
-      <h3 class="house-name">{{ house.name || 'Unnamed House' }}</h3>
-      <p><strong>Title:</strong> {{ house.titles[0] || 'None' }}</p>
-      <p><strong>Region:</strong> {{ house.region || 'Unknown' }}</p>
-      <p><strong>Words:</strong> {{ house.words || 'No words' }}</p>
-      <p><strong>Coat of Arms:</strong> {{ house.coatOfArms || 'None' }}</p>
-    </div>
-  </div>
+  <table class="house-table" *ngIf="houses.length > 0">
+    <thead>
+      <tr>
+        <th>House Name</th>
+        <th>Title</th>
+        <th>Region</th>
+        <th>Words</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let house of houses">
+        <td>{{ house.name || 'Unnamed House' }}</td>
+        <td>{{ house.titles[0] || 'None' }}</td>
+        <td>{{ house.region || 'Unknown' }}</td>
+        <td>{{ house.words || 'No words' }}</td>
+        <td>
+          <div class="button-container">
+            <button (click)="goToDetail(house.url)">View Details</button>
+          </div>
+          
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

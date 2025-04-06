@@ -18,3 +18,17 @@ export class HouseService {
     return this.http.get<any>(`${this.apiUrl}/${id}`);
   }
 }
+
+export class CharacterService {
+  private apiUrl = 'https://www.anapioficeandfire.com/api/characters';
+
+  constructor(private http: HttpClient) {}
+
+  getAllCharacter(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}?page=1&pageSize=50`);
+  }
+
+  getCharacterById(id: string): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/${id}`);
+  }
+}

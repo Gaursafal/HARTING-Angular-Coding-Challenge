@@ -6,33 +6,11 @@
 
 .title {
   text-align: center;
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-  color: #333;
-}
-
-.house-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 0.5rem;
-}
-
-.house-card {
-  border-radius: 12px;
-  padding: 1.2rem;
-  cursor: pointer;
-  border: 1px solid #e0e0e0;
-}
-
-.house-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.house-name {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  color: #c59d2f;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-weight: bold;
+  position: relative;
 }
 
 .no-houses {
@@ -42,3 +20,45 @@
   color: #555;
 }
 
+.house-table {
+  font-size: 0.8rem;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.house-table th,  
+.house-table td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: left;
+}
+
+.house-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.house-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 0.5rem; */
+}
+
+button {
+  background-color: #495058;
+  color: white;
+  width: 100px;
+  border: none;
+  padding: 0.5rem 0.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+  color: white; /* optional: improves readability */
+}

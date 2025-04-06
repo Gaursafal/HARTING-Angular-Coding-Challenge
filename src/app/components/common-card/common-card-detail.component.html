@@ -1,0 +1,22 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div class="entity-container" *ngIf="!loading">
+  <div class="entity-card">
+    <h2 class="entity-title">{{ title }}</h2>
+
+    <div class="info-list">
+      <div class="info-item" *ngFor="let item of info">
+        <span class="label">{{ item.label }}:</span>
+        <span class="value">
+          <ng-container *ngIf="isUrl(item.value); else textOnly">
+            <!-- Use the click event to trigger navigation -->
+            <a (click)="navigateToEntity(item.value)" class="link">View</a>
+          </ng-container>
+          <ng-template #textOnly>
+            {{ item.value || 'Unknown' }}
+          </ng-template>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
