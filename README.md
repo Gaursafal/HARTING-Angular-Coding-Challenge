@@ -10,6 +10,7 @@ A simple Angular application that displays Game of Thrones houses using the [An 
 
 - 🔍 List of Game of Thrones houses
 - 📄 House detail view with structured data
+- 📄 Character detail view with structured data
 - ⏳ Loading indicators using a reusable loader component
 - 🧩 Modular and standalone component architecture
 - 🎨 Clean and responsive UI with grid layout
@@ -25,6 +26,9 @@ A simple Angular application that displays Game of Thrones houses using the [An 
 
 ### 🏰 House Detail Page
 ![House Detail Page](public/HouseDetails.png)
+
+###  Character Detail Page
+![House Detail Page](public/Character.png)
 
 ---
 
